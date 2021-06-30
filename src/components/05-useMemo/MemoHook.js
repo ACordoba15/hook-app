@@ -16,7 +16,8 @@ export const MemoHook = () => {
 
   // Lo que viene a resolver este hook useMemo, es que memorice un valor, y si este valor no cambia mientra se ejecuten las funcionalidades en pantalla, no se volverá a ejecutar la función del counter.
 
-  // const memoProcesoPesado =  useMemo( () => procesoPesado(counter), [counter])
+  const memoProcesoPesado =  useMemo( 
+    () => procesoPesado(counter), [counter])
 
   return (
     <div>

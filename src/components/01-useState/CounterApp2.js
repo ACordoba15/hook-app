@@ -3,10 +3,7 @@ import './counter.css';
 
 export const CounterApp2 = () => {
 
-  const [counter, setCounter] = useState({
-    counter1 :50, 
-    counter2: 100,
-  });
+  const [counter, setCounter] = useState({ counter1 :50, counter2: 100});
 
   const {counter1, counter2} = counter;
   return (
@@ -18,26 +15,18 @@ export const CounterApp2 = () => {
       <button 
         className="btn btn-primary"
         onClick={ () => {
-          setCounter({
-            ...counter,
-            counter1 : counter1 + 1
+          setCounter({ ...counter, counter1 : counter1 + 1
           });
         }}
-      >
-       +1
-      </button>
+      > +1 </button>
       
       <button 
         className="btn btn-primary"
-        onClick={ () => {
-          setCounter({
-            ...counter, // operador spread
-            counter2 : counter2 - 1
+        onClick={ () => { // operador spread 
+          setCounter({ ...counter, counter2 : counter2 - 1
           });
         }}
-      >
-       -1
-      </button>
+      > -1 </button>
     </>
   )
 }

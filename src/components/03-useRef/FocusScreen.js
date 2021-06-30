@@ -4,9 +4,10 @@ import '../02-useEffect/effects.css';
 export const FocusScreen = () => {
   
   // hace la referencia a algun elemento, en este caso al input
+   // le hará focus y seleccionará el texto.
+
   const inputRef = useRef();
 
-  // le hará focus y seleccionará el texto.
   const handleClick = () => {
     inputRef.current.select();
     console.log(inputRef);

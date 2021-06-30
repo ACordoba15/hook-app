@@ -13,6 +13,10 @@ export const SimpleForm = () => {
   // Lo que se quiere es que se ejecute ya sea una vez, para esto se envía como segundo parametro una array vacío
   // o bien, cuando se detecte en el state, por ejemplo el nombre.
 
+  // useEffect( () => {
+  //   console.log('hola mundo');
+  // });
+  
   useEffect( () => {
     console.log('hola mundo');
   }, []);

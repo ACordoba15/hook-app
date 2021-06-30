@@ -25,9 +25,9 @@ export const MemoHook = () => {
       <h3>Counter: { counter }</h3>
       <hr/>
 
-      {/* <p> {memoProcesoPesado}</p> */}
+      <p> {memoProcesoPesado}</p>
 
-      <p> {procesoPesado(counter)}</p>
+      {/* <p> {procesoPesado(counter)}</p> */}
 
       <button className="btn btn-primary"
         onClick={increment}

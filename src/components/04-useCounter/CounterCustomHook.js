@@ -4,11 +4,11 @@ import '../02-useEffect/effects.css';
 
 
 export const CounterCustomHook = () => {
-  const {state, increment, decrement} = useCounter();
+  const {counter, increment, decrement} = useCounter();
 
   return (
     <>
-      <h1>Counter Custom Hook: {state}</h1>
+      <h1>Counter Custom Hook: {counter}</h1>
       <hr/>
 
       <button onClick={increment} className="btn btn-primary">+1</button>
